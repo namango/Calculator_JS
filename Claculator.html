@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min's Calculator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/55a84d5ff3.js" crossorigin="anonymous"></script>
+    <script defer src="Cal_main.js"></script>
+    <link rel="stylesheet" href="Cal_style.css">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <div class="title__logo">
+                <img src="image/KakaoTalk_20210428_132217311.png">
+                <span> Min's Calculator by JS </span>
+            </div>
+            <a class="gitbub" href="https://github.com/namango"><i class="fab fa-github" ></i></a>
+        </div>
+    </header>
+    <form class="calculator">
+        <div class="cal__screen">
+            <p class="cal__process">process</p>
+            <p class="cal__result">result</p>
+        </div>
+        <div class=row__1>
+            <input type="button" onclick="cal__percent()" value="%">
+            <input type="button" onclick="input__operator('/')" value="÷">
+            <input type="button" onclick="cal__clear()" value="C">
+            <input type="button" onclick="cal__backspace()" value="←">
+        </div>
+        <div>
+            <input type="button" onclick="input__number(value)" value="7">
+            <input type="button" onclick="input__number(value)" value="8">
+            <input type="button" onclick="input__number(value)" value="9">
+            <input type="button" onclick="input__operator('*')" value="x">
+        </div>
+        <div>
+            <input type="button" onclick="input__number(value)" value="4">
+            <input type="button" onclick="input__number(value)" value="5">
+            <input type="button" onclick="input__number(value)" value="6">
+            <input type="button" onclick="input__operator(value)" value="-">
+        </div>
+        <div>
+            <input type="button" onclick="input__number(value)" value="1">
+            <input type="button" onclick="input__number(value)" value="2">
+            <input type="button" onclick="input__number(value)" value="3">
+            <input type="button" onclick="input__operator(value)" value="+">
+        </div>
+        <div>
+            <input type="button" value="±">
+            <input type="button" onclick="input__number(value)" value="0">
+            <input type="button" onclick="input__number(value)" value=".">
+            <input type="button" onclick=" cal__eqaul(value)" value="=">
+        </div>
+    </form>
+</body>
+</html>
